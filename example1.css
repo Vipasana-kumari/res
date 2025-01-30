@@ -1,0 +1,19 @@
+h1 {
+    color: blueviolet;
+    text-align: center;
+  }
+   /* id selector*/
+  #i1 {
+    color: palevioletred;
+    background-color: red;
+  }
+   /* class selector*/
+  .c1 {
+    color: cadetblue;
+    background-color: blue;
+  }
+   /* universal selector*/
+  * {
+    background-color: antiquewhite;
+    padding: 0.5%;
+  }

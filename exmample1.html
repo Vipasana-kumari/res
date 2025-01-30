@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="example1.css">
+    <style>
+      /* element selector*/
+      h1 {
+        color: blueviolet;
+        text-align: center;
+      }
+       /* id selector*/
+      #i1 {
+        color: palevioletred;
+        background-color: red;
+      }
+       /* class selector*/
+      .c1 {
+        color: cadetblue;
+        background-color: blue;
+      }
+       /* universal selector*/
+      * {
+        background-color: antiquewhite;
+        padding: 0.5%;
+      }
+      #psolid{
+        border: 9px;
+        border-style:inset;
+        border-color: brown blueviolet palevioletred;
+        padding-bottom: 80px;
+      }
+      .p1{
+        border:  4px dotted rgb(35, 24, 95);
+      }
+      .div1{
+        border:  4px dashed rgb(109, 30, 104);
+        background-color:rgb(199, 148, 196);
+        padding: 100px 90px 100px 90px;
+        color: rgb(74, 16, 23);
+        margin: 110px ;
+      }
+      .container{
+       display: grid;
+       grid-template-columns: auto auto auto auto ;
+       background-color: dodgerblue;
+       padding: 10px;
+       gap: 10px;
+       grid-template-areas:  'header header header header header header'
+    'meu main main main right right'
+    'meu footer footer dun dun dun' ;
+      }
+      .container > div {
+      background-color: #f1f1f1;
+      border: 1px solid black;
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    
+}
+    .item1{grid-area: header;}
+    .item2{grid-area: meu;}
+    .item3{grid-area: main;}
+    .item4{grid-area: right;}
+    .item5{grid-area: footer;}
+    .item6{grid-area: dun;}
+
+    </style>
+  </head>
+  <body>
+    <p>this is a paragraph.</p>
+    <br />
+    <p class="a1">
+      this ia paragraph containing a <a href="http://www.google.com">link</a>.
+    </p>
+    <h1>H1 HEADING</h1>
+    <h2>H2 HEADING</h2>
+    <h3 style="background-color: cadetblue;color: chocolate;text-align: center;">H3 HEADING with inline css</h3>
+    <blockquote cite="https://datatracker.ietf.org/doc/html/rfc1149">
+      <p>Avian carriers can provide high delay, low throughput</p>
+    </blockquote>
+    <br />
+    <table border="1 " width="40%" cellpadding="50" >
+      <tr>
+        <th>table</th>
+        <td rowspan="3">1</td>
+        <td rowspan="2" bgcolor="pink">2</td>
+      </tr>
+      <tr>
+        <th>table</th>
+        <td rowspan="3" bgcolor="blue">7</td>
+        <td rowspan="2" bgcolor="yellow">8</td>
+      </tr>
+    </table>
+    <br />
+    <p>ordered list</p>
+    <ol type="a">
+      <li>hen</li>
+      <li>goat</li>
+      <li>cow</li>
+    </ol>
+    <br />
+    <p>unordered list</p>
+    <ul>
+      <li>pink</li>
+      <li>blue</li>
+      <li>yellow</li>
+    </ul>
+    <form action="">
+      <table>
+        <tr>
+          <td>First Name:</td>
+          <td class="c2"><input type="text" placeholder="first name" /></td>
+        </tr>
+        <tr>
+          <td class="c2">last Name:</td>
+          <td><input type="text" placeholder="last name" /></td>
+          <br></tr>
+          <tr></tr>
+          <td class="c2">Gender</td>
+          <td><input type="checkbox"  />Male</td>
+          <td><input type="checkbox"  /> Female</td>
+        </tr>
+      </table>
+    </form>
+    <h1>item 1 element selector using css</h1>
+    <h2 id="i1">item 2 id selector using css</h2>
+    <h3 class="c1">item 3 class selector using css</h3>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2 class="p1">padding properties</h2>
+    <div class ="div1">Some content</div>
+    <h2 id="psolid">Some content</h2>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <!-- CSS grid properties-->
+      <div class="container">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+      <div class="item5">5</div>
+      <div class="item6">6</div>
+     
+     
+      </div>
+  </body>
+  <!--<article> <div> span  -->
+</html>
